@@ -1,5 +1,5 @@
 # Jumper Virtual Lab Peripheral Model - ISM43362
-This repo contains a model for the ISM43362 for [Jumper Virtual Lab](https://vlab.jumper.io).
+Contains a model for the ISM43362 to use with [Jumper Virtual Lab](https://vlab.jumper.io).
 
 ## Example folder contains
 - "board.json" example file.
