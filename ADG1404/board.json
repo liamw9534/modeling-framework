@@ -1,0 +1,29 @@
+{
+	"description": "ADG1404",
+	"components": [
+		{
+			"name": "nrf52832",
+			"id": 0,
+			"type": "MCU",
+			"class": "Nrf52832"
+		},
+		{
+			"name": "ADG1404",
+			"id": 1,
+			"type": "Peripheral",
+			"file": "build/_output/ADG1404.so",
+			"config": {
+				"pins": {
+					"pinS1": 11,
+					"pinS2": 12,
+					"pinS3": 13,
+					"pinS4": 14,
+					"pinA0": 15,
+					"pinA1": 16,
+					"pinEn": 17,
+					"pinOutput": 18
+				}
+			}
+		}
+	]
+}
