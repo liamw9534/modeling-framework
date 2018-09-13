@@ -1,5 +1,5 @@
 # Jumper Virtual Lab Peripheral Model - I2CDummySlave
-This repo contains I2CDummySlave peripheral to use with [Jumper Virtual Lab](https://vlab.jumper.io).
+Contains I2CDummySlave peripheral to use with [Jumper Virtual Lab](https://vlab.jumper.io).
 
 ## Example folder contains
 - "board.json" example file.
