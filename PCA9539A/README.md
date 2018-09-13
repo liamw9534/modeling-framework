@@ -1,5 +1,5 @@
 # Jumper Virtual Lab Peripheral Model - PCA9539A
-This repo contains PCA9539A peripheral to use with [Jumper Virtual Lab](https://vlab.jumper.io).
+Contains PCA9539A peripheral to use with [Jumper Virtual Lab](https://vlab.jumper.io).
 
 ## Example folder contains
 - "board.json" example file.
