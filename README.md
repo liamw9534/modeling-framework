@@ -30,7 +30,7 @@ For more information, visit [the docs](https://docs.jumper.io).
 ### Runing firmware :
 - Copy "build/_build/PERIPHERAL_NAME.so" file to you working diretory, same one as the "board.json" file.
 - See "board.json" example file under "example/" folder.
-- Add the following component in to your "board.json" file. Make sure to change the board.json pin numbers to fit your configuration.
+- Add the relveant component from the "board.json" example file, in to your "board.json" file. Make sure to change the board.json pin numbers to fit your configuration.
 
 ## License
 Licensed under the Apache License, Version 2.0. See the LICENSE file for more information
