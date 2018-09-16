@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(ISM43362)
+project(ADG1404)
 
 
 #-std=c++11 -Werror -Wall -Wfatal-errors -Wno-shift-count-overflow -Weffc++ -Wno-non-virtual-dtor -Wno-strict-aliasing -Wno-unused-private-field

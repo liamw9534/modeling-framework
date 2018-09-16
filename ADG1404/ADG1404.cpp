@@ -6,9 +6,9 @@ ADG1404::ADG1404() {
     source_pin_.push_back(GetPinNumber("pinS3"));
     source_pin_.push_back(GetPinNumber("pinS4"));
 
-    SetPinChangeLevelEventCallback(GetPinNumber("pinA0"), std::bind(&ADG1404::OnPinChangeLevelEvent,this,std::placeholders::_1));
-    SetPinChangeLevelEventCallback(GetPinNumber("pinA1"), std::bind(&ADG1404::OnPinChangeLevelEvent,this,std::placeholders::_1));
-    SetPinChangeLevelEventCallback(GetPinNumber("pinEn"), std::bind(&ADG1404::OnPinChangeLevelEvent,this,std::placeholders::_1));
+    SetPinChangeLevelEventCallback("pinA0", std::bind(&ADG1404::OnPinChangeLevelEvent,this,std::placeholders::_1));
+    SetPinChangeLevelEventCallback("pinA1", std::bind(&ADG1404::OnPinChangeLevelEvent,this,std::placeholders::_1));
+    SetPinChangeLevelEventCallback("pinEn", std::bind(&ADG1404::OnPinChangeLevelEvent,this,std::placeholders::_1));
 
     adg1404_short = CreateShort();
     SetAdg1404Short();

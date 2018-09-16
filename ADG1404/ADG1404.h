@@ -1,5 +1,5 @@
 #pragma once
-#include<vector>
+#include <vector>
 #include "ModelingFramework.h"
 
 class ADG1404 : public ExternalPeripheral {
