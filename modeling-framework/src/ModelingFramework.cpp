@@ -29,6 +29,11 @@ iI2cSlave* CreateI2cSlave() {
     return jemu_interface_->CreateI2cSlave();
 }
 
+iShort* CreateShort() {
+    assert(jemu_interface_);
+    return jemu_interface_->CreateShort();
+}
+
 bool GetPinLevel(int pin_number) {
     assert(jemu_interface_);
     return jemu_interface_->GetPinLevel(pin_number);
@@ -133,4 +138,8 @@ int SetPinChangeLevelEventCallback(uint32_t pin_id, const pin_change_level_callb
     auto pin_change_level_callback = new PinChangeLevelEventCallback(callback);
     jemu_interface_->SetPinChangeLevelEventCallback(pin_id, pin_change_level_callback);
     return id++;
+}
+
+int SetPinChangeLevelEventCallback(const std::string &pin_name, const pin_change_level_callback_t &callback) {
+    return SetPinChangeLevelEventCallback( (uint32_t) GetPinNumber(pin_name) ,callback);
 }

@@ -40,7 +40,7 @@ iShort* CreateShort();
 
 /**
  * This function returns the current level of a given pin name
- * @param pin_name (as it appears on board.json file), that his level returns
+ * @param pin_number (as it appears on board.json file), that his level returns
  * @return true, if pin level is high, otherwise false
  */
 bool GetPinLevel(int pin_number);
@@ -148,6 +148,13 @@ void SetPinDirection(uint32_t pin_id,  pin_direction_t direction, bool pullup);
  */
 int SetPinChangeLevelEventCallback(uint32_t pin_id, const pin_change_level_callback_t &callback);
 
+/**
+ * This function set callback on pin level change event
+ * @param pin_name that change in his level will call the the callback
+ * @param pin_change_level_callback callback function to be called on change level event
+ * @return callback id
+ */
+int SetPinChangeLevelEventCallback(const std::string &pin_name, const pin_change_level_callback_t &callback);
 
 class ExternalPeripheral {
   public:
